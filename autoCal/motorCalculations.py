@@ -142,7 +142,7 @@ def get_hall_event_interval(motor_rpm: float, pole_pairs: int) -> float:
     hall_event_count = get_hall_events_per_motor_rotation(pole_pairs)
     return T / hall_event_count
 
-def get_hall_event_per_second(motor_rpm: float, pole_pairs: int) -> float:
+def get_hall_events_per_second(motor_rpm: float, pole_pairs: int) -> float:
     """calculates the number of hall events per second
 
     Args:
@@ -156,7 +156,7 @@ def get_hall_event_per_second(motor_rpm: float, pole_pairs: int) -> float:
     hall_event_count = get_hall_events_per_motor_rotation(pole_pairs)
     return hall_event_count * rps
 
-def get_hall_event_per_minute(motor_rpm: float, pole_pairs: float) -> float:
+def get_hall_events_per_minute(motor_rpm: float, pole_pairs: float) -> float:
     """Calculates the number of hall events per minute
 
     Args:
